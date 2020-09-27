@@ -5,11 +5,21 @@ import clsx from "clsx";
 import { Container, Card } from "react-bootstrap";
 import Image from "components/Image";
 import "./ImageCard.scss";
+import bgVideo from "../../content/assets/videos/bg-hero.mp4";
 
 const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
   return (
     <Card className={clsx("image-card bg-dark text-white text-center", className)}>
-      <Image className="image" fileName={imageFileName} alt={imageAlt || header || subheader} />
+      <Image
+        className="image d-md-none"
+        fileName={imageFileName}
+        alt={imageAlt || header || subheader}
+      />
+
+      <video className="video d-none d-md-block" autoPlay loop muted>
+        <source src={bgVideo} type="video/mp4" />
+        <track kind="captions" />
+      </video>
       <Card.ImgOverlay className="no-padding">
         <Container>
           <div className="intro-text">

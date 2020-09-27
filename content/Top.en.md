@@ -1,7 +1,7 @@
 ---
-header: "It's Nice To Meet You"
-subheader: "Welcome To Our Studio!"
+header: "The Co-Operative Way"
+subheader: "We are empowering businesses"
 imageFileName: "header-bg.jpg"
 jumpToAnchor: "Services"
-jumpToAnchorText: "Tell Me More"
+jumpToAnchorText: "Discover yourself"
 ---
