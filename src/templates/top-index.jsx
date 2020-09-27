@@ -9,6 +9,7 @@ import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import Loading from "views/Loading";
 import LanguageSelector from "components/LanguageSelector";
+import { Fade } from "react-reveal";
 import fileNameToSectionName from "../utils/fileNameToSectionName";
 
 import "utils/fixFontAwesome";
@@ -123,12 +124,9 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   const [isVisible, hideLoading] = useState(true);
 
-  document.body.style.overflow = "hidden";
-
   useEffect(() => {
     setTimeout(() => {
       hideLoading({ isVisible: false });
-      document.body.style.overflow = "visible";
     }, 3000);
   }, []);
 
@@ -136,28 +134,36 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Loading {...isVisible} />
-      <Navbar
-        anchors={anchors}
-        frontmatter={navBarNode.frontmatter}
-        extraItems={langSelectorPart}
-      />
-      <Top frontmatter={topNode.frontmatter} />
-      {
-        // dynamically import sections
-        sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
-          const sectionComponentName = fileNameToSectionName(fileName);
-          const SectionComponent = Sections[sectionComponentName];
-
-          return SectionComponent ? (
-            <SectionComponent
-              key={sectionComponentName}
-              className={ind % 2 === 1 ? "bg-light" : null}
-              frontmatter={frontmatter}
+      {isVisible ? (
+        ""
+      ) : (
+        <>
+          <Fade>
+            <Navbar
+              anchors={anchors}
+              frontmatter={navBarNode.frontmatter}
+              extraItems={langSelectorPart}
             />
-          ) : null;
-        })
-      }
-      <Footer frontmatter={footerNode.frontmatter} />
+            <Top frontmatter={topNode.frontmatter} />
+            {
+              // dynamically import sections
+              sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
+                const sectionComponentName = fileNameToSectionName(fileName);
+                const SectionComponent = Sections[sectionComponentName];
+
+                return SectionComponent ? (
+                  <SectionComponent
+                    key={sectionComponentName}
+                    className={ind % 2 === 1 ? "bg-light" : null}
+                    frontmatter={frontmatter}
+                  />
+                ) : null;
+              })
+            }
+            <Footer frontmatter={footerNode.frontmatter} />
+          </Fade>
+        </>
+      )}
     </>
   );
 };
