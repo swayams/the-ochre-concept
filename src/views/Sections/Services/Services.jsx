@@ -6,6 +6,9 @@ import { Row, Col } from "react-bootstrap";
 import ServiceItem from "components/ServiceItem";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
+import Fade from "react-reveal/Fade";
+
+const { delay } = require("../../../../config/site");
 
 const Services = ({ className, frontmatter }) => {
   if (!frontmatter) {
@@ -20,9 +23,11 @@ const Services = ({ className, frontmatter }) => {
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row className="text-center">
-        {services.map((service) => (
+        {services.map((service, index) => (
           <Col md={4} key={service.header}>
-            <ServiceItem {...service} />
+            <Fade right delay={delay * index}>
+              <ServiceItem {...service} />
+            </Fade>
           </Col>
         ))}
       </Row>

@@ -10,6 +10,8 @@ module.exports = {
     "bootstrap",
     "startbootstrap-agency",
   ],
+  delay: 500,
+  duration: 1000,
   description: "gatsby version of startbootstrap-agency with i18n support.",
   author: "thundermiracle",
   trackingId: "UA-119418003-5",

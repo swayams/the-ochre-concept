@@ -9,7 +9,7 @@ import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import Loading from "views/Loading";
 import LanguageSelector from "components/LanguageSelector";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 import fileNameToSectionName from "../utils/fileNameToSectionName";
 
 import "utils/fixFontAwesome";
@@ -124,46 +124,45 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   const [isVisible, hideLoading] = useState(true);
 
+  // document.body.style.overflow = "hidden";
+
+  const delay = 3000;
+
   useEffect(() => {
     setTimeout(() => {
       hideLoading({ isVisible: false });
-    }, 3000);
+      // document.body.style.overflow = "visible";
+    }, delay);
   }, []);
 
   return (
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
       <Loading {...isVisible} />
-      {isVisible ? (
-        ""
-      ) : (
-        <>
-          <Fade>
-            <Navbar
-              anchors={anchors}
-              frontmatter={navBarNode.frontmatter}
-              extraItems={langSelectorPart}
-            />
-            <Top frontmatter={topNode.frontmatter} />
-            {
-              // dynamically import sections
-              sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
-                const sectionComponentName = fileNameToSectionName(fileName);
-                const SectionComponent = Sections[sectionComponentName];
+      <Fade when={isVisible} delay={delay * 2}>
+        <Navbar
+          anchors={anchors}
+          frontmatter={navBarNode.frontmatter}
+          extraItems={langSelectorPart}
+        />
+        <Top frontmatter={topNode.frontmatter} />
+        {
+          // dynamically import sections
+          sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
+            const sectionComponentName = fileNameToSectionName(fileName);
+            const SectionComponent = Sections[sectionComponentName];
 
-                return SectionComponent ? (
-                  <SectionComponent
-                    key={sectionComponentName}
-                    className={ind % 2 === 1 ? "bg-light" : null}
-                    frontmatter={frontmatter}
-                  />
-                ) : null;
-              })
-            }
-            <Footer frontmatter={footerNode.frontmatter} />
-          </Fade>
-        </>
-      )}
+            return SectionComponent ? (
+              <SectionComponent
+                key={sectionComponentName}
+                className={ind % 2 === 1 ? "bg-light" : null}
+                frontmatter={frontmatter}
+              />
+            ) : null;
+          })
+        }
+        <Footer frontmatter={footerNode.frontmatter} />
+      </Fade>
     </>
   );
 };
