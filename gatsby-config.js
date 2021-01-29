@@ -58,21 +58,29 @@ module.exports = {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [
-          {
-            family: "Montserrat",
-            variants: [400, 700],
-          },
-          {
-            family: "Kaushan+Script",
-          },
-          {
-            family: "Droid+Serif",
-            variants: [400, 700, "400italic", "700italic"],
-          },
-          {
-            family: "Roboto+Slab",
-            variants: [400, 100, 300, 700],
-          },
+          // {
+          //   family: "Montserrat",
+          //   variants: [400, 700],
+          // },
+          // {
+          //   family: "Kaushan+Script",
+          // },
+          // {
+          //   family: "Droid+Serif",
+          //   variants: [400, 700, "400italic", "700italic"],
+          // },
+          // {
+          //   family: "Roboto+Slab",
+          //   variants: [400, 100, 300, 700],
+          // },
+
+          'Montserrat',
+          'source sans pro\:400, 700',
+          'Kaushan+Script',
+          'source sans pro\:400, 700, 400italic, 700italic',
+          'Roboto+Slab',
+          'source sans pro\:400, 100, 300, 700'
+
         ],
       },
     },
