@@ -8,7 +8,7 @@ import Footer from "views/Footer";
 import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import Loading from "views/Loading";
-import LanguageSelector from "components/LanguageSelector";
+// import LanguageSelector from "components/LanguageSelector";
 import Fade from "react-reveal/Fade";
 import fileNameToSectionName from "../utils/fileNameToSectionName";
 
@@ -106,7 +106,7 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) => {
+const IndexPage = ({ data, pathContext: { langKey, /* defaultLang, langTextMap */ } }) => {
   const {
     site: {
       siteMetadata: { keywords, description },
