@@ -83,6 +83,7 @@ export const query = graphql`
               twitter
             }
             subheader
+            about
           }
           telephone
           termsHref
@@ -116,11 +117,13 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
   const { topNode, navBarNode, anchors, footerNode, sectionsNodes } = breakDownAllNodes(nodes);
 
   let langSelectorPart;
-  if (langTextMap != null && Object.keys(langTextMap).length > 1) {
-    langSelectorPart = (
-      <LanguageSelector langKey={langKey} defaultLang={defaultLang} langTextMap={langTextMap} />
-    );
-  }
+
+  // we dont need lanugage selector for now 
+  // if (langTextMap != null && Object.keys(langTextMap).length > 1) {
+  //   langSelectorPart = (
+  //     <LanguageSelector langKey={langKey} defaultLang={defaultLang} langTextMap={langTextMap} />
+  //   );
+  // }
 
   const [isVisible, hideLoading] = useState(true);
 

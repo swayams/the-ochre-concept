@@ -1,5 +1,5 @@
 ---
-copyright: "Copyright © Start Bootstrap 2020"
+copyright: "Copyright © The Ochre Concept"
 social: {
   twitter: "#",
   facebook: "#",

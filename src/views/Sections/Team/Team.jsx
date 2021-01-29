@@ -27,7 +27,7 @@ const Team = ({ className, frontmatter }) => {
       </Row>
       <Row>
         {teamMember.map(({ header, ...tmProps }) => (
-          <Col sm={4} key={header}>
+          <Col md={4} key={header}>
             <TeamMember header={header} {...tmProps} />
           </Col>
         ))}

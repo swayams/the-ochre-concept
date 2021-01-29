@@ -11,6 +11,7 @@ const TeamMember = ({
   imageAlt,
   header,
   subheader,
+  about,
   social: { twitter, facebook, linkedin, github, medium },
 }) => {
   const twitterPart = twitter ? <SocialIcons.Twitter userName={twitter} /> : null;
@@ -27,7 +28,8 @@ const TeamMember = ({
         alt={imageAlt || header || subheader}
       />
       <h4>{header}</h4>
-      <p className="text-muted">{subheader}</p>
+      <p className="subheader">{subheader}</p>
+      <p className="text-muted">{about}</p>
       <div>
         {twitterPart}
         {facebookPart}
@@ -44,6 +46,7 @@ TeamMember.propTypes = {
   imageAlt: PropTypes.string,
   header: PropTypes.string,
   subheader: PropTypes.string,
+  about: PropTypes.string,
   social: PropTypes.shape({
     twitter: PropTypes.string,
     facebook: PropTypes.string,
@@ -57,6 +60,7 @@ TeamMember.defaultProps = {
   imageAlt: null,
   header: "",
   subheader: "",
+  about: "a",
   social: {
     twitter: null,
     facebook: null,
