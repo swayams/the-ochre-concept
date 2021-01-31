@@ -140,7 +140,7 @@ const IndexPage = ({ data, pathContext: { langKey, /* defaultLang, langTextMap *
 
   return (
     <>
-      <SEO lang={langKey} title="web" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="the ochre concept" keywords={keywords} description={description} />
       <Loading {...isVisible} />
       <Fade when={isVisible} delay={delay * 2}>
         <Navbar
