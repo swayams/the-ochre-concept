@@ -1,7 +1,7 @@
 ---
 anchor: "About"
 header: "About"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "We believe in a strong foundation, a bespoke brand and working together to bring value to the local community."
 timeline: [
   {
     imageFileName: "about/1.jpg",
