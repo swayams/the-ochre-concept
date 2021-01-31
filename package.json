@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-startbootstrap-agency",
-  "description": "gatsby version of startbootstrap-agency with i18n support",
+  "name": "the ochre concept",
+  "description": "creative agency based out of swansea, UK",
   "version": "0.1.0",
-  "author": "thundermiracle",
+  "author": "swayams",
   "bugs": {
-    "url": "https://github.com/thundermiracle/gatsby-startbootstrap-agency/issues"
+    "url": "https://github.com/swayams/the-ochre-concept"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -60,7 +60,7 @@
     "gatsby-plugin-eslint": "^2.0.8",
     "prettier": "^2.2.1"
   },
-  "homepage": "https://thundermiracle.github.io/gatsby-startbootstrap-agency",
+  "homepage": "https://github.com/swayams/the-ochre-concept",
   "keywords": [
     "gatsby",
     "gatsbyjs",
@@ -68,14 +68,13 @@
     "landing",
     "i18n",
     "eslint",
-    "bootstrap",
-    "startbootstrap-agency"
+    "bootstrap"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thundermiracle/gatsby-startbootstrap-agency.git"
+    "url": "git+https://github.com/swayams/the-ochre-concept"
   },
   "scripts": {
     "clean": "gatsby clean",

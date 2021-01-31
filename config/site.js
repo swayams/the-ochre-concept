@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
+  title: "the ochre concept",
   keywords: [
     "gatsby",
     "gatsbyjs",
@@ -8,12 +8,11 @@ module.exports = {
     "i18n",
     "eslint",
     "bootstrap",
-    "startbootstrap-agency",
   ],
   delay: 500,
   duration: 1000,
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
+  description: "creative agency based out of Swansea, UK",
+  author: "swayams",
   trackingId: "UA-119418003-5",
   defaultLang: "en",
   langTextMap: {
