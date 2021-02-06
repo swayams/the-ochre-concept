@@ -4,32 +4,32 @@ header: "Portfolio"
 subheader: "We generally tend to work with individual or small enterprises who let us interprit their story with them. Generally, it'd start with a storyboard and the process of detailing out involves multiple rounds of discussion so that we understand the philosophy and the motivation behind the brand that we are to craft."
 portfolios: [
   {
-    imageFileName: "portfolio/01-thumbnail.jpg",
-    imageFileNameDetail: "portfolio/01-full.jpg",
+    imageFileName: "portfolio/croissant.jpg",
+    imageFileNameDetail: "portfolio/croissant.jpg",
     header: "Geste croissanterie",
     subheader: "Business",
     content: "After multiple ventures and positions, Virgyl decides to start his own croissanterie and artisinal bakery at Toronto, Canada. We worked with him from ground up, from figuring out the layout to the brand colors, to delivering a fast, responsive and an easily configurable website.",
     extraInfo: ["Date: January 2019", "Client: Vrgyl Fernandes", "Category: Business"]
   },
   {
-    imageFileName: "portfolio/02-thumbnail.jpg",
-    imageFileNameDetail: "portfolio/02-full.jpg",
+    imageFileName: "portfolio/owl.jpg",
+    imageFileNameDetail: "portfolio/owl.jpg",
     header: "Viergast",
     subheader: "Developer Portfolio",
     content: "A procedure generated developer portfolio that runs on top of a reactjs, material design and google cloud platform. Its eminently configurable and forms the basis of our propertary site-gen technology.",
     extraInfo: ["Date: January 2017", "Client: Swayam Siddha", "Category: Portfolio"]
   },
   {
-    imageFileName: "portfolio/03-thumbnail.jpg",
-    imageFileNameDetail: "portfolio/03-full.jpg",
+    imageFileName: "portfolio/meditating.jpg",
+    imageFileNameDetail: "portfolio/meditating.jpg",
     header: "Rahul Chandani and Sunita Joshi Foundation",
-    subheader: "Non-Profit Organization",
+    subheader: "Non-Profit",
     content: "Nishta, a clinical psycologyist,  wanted a clean and effective website to establish digital presense for her social initiative based out of New Delhi, India. She was clear about the technology stack, language and content of the site. We delivered a minimalist and functional website built with Wix.com",
     extraInfo: ["Date: Feb 2021", "Client: Nishtha Buddhiraja", "Category: NGO"]
   },
   {
-    imageFileName: "portfolio/04-thumbnail.jpg",
-    imageFileNameDetail: "portfolio/04-full.jpg",
+    imageFileName: "portfolio/sunrise.jpg",
+    imageFileNameDetail: "portfolio/sunrise.jpg",
     header: "The Ochre Concept",
     subheader: "Business",
     content: "Our bespoke brand agency. Procedurally generated from our propritery site generation technology. Built on gatsbyjs, bootstrap and netlify and eminently configurable.",
