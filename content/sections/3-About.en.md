@@ -19,7 +19,7 @@ timeline: [
     imageFileName: "about/3.jpg",
     header: "November 2020",
     subheader: "Transition to Full Service",
-    content: "We started getting serious, Swayam quit his job to be engaged in this full time. Jiten followed suit in December. We have been working with a bakery, a NGO and a bicycle shop since then to cater to their branding needs."
+    content: "We move to Swansea as full time students. A preliminary anaylsis shows that our favourite local businesses have little or no web presence. We are working on a couple of pilot engagements to identify how we can deliver maximum value to our clients with our skillset and resources."
   },
   {
     imageContent: "Be Part\r\nOf Our\r\nStory!"
