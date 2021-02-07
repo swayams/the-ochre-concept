@@ -143,7 +143,9 @@ const IndexPage = ({ data, pathContext: { langKey, /* defaultLang, langTextMap *
   useEffect(() => {
     setTimeout(() => {
       hideLoading({ isVisible: false });
-      document.body.style.overflow = "visible";
+      hasBody
+        ? document.body.style.overflow = "visible"
+        : console.log('document not found')
     }, delay);
   }, []);
 
