@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Image from "components/Image";
+import './Client.scss';
 
 const Client = ({ imageFileName, href }) => {
   const imgPart = (
-    <Image className="img-fluid d-block mx-auto" fileName={imageFileName} alt={imageFileName} />
+    <Image className="img-fluid d-block mx-auto client-logo" fileName={imageFileName} alt={imageFileName} />
   );
 
   if (href) {

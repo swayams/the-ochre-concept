@@ -128,7 +128,15 @@ const IndexPage = ({ data, pathContext: { langKey, /* defaultLang, langTextMap *
 
   const [isVisible, hideLoading] = useState(true);
 
-  document.body.style.overflow = "hidden";
+
+  const [hasBody, setHasBody] = useState(false);
+
+  useEffect(() => setHasBody(document.querySelector('body') != null));
+
+  hasBody
+    ? document.body.style.overflow = "hidden"
+    : console.log('document not found')
+
 
   const delay = 2000;
 

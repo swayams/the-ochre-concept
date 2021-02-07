@@ -6,6 +6,7 @@ import { Row, Col } from "react-bootstrap";
 import PageSection from "components/PageSection";
 import Client from "components/Client";
 
+
 const Clients = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
