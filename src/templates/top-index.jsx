@@ -128,14 +128,14 @@ const IndexPage = ({ data, pathContext: { langKey, /* defaultLang, langTextMap *
 
   const [isVisible, hideLoading] = useState(true);
 
-  // document.body.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
 
-  const delay = 3000;
+  const delay = 2000;
 
   useEffect(() => {
     setTimeout(() => {
       hideLoading({ isVisible: false });
-      // document.body.style.overflow = "visible";
+      document.body.style.overflow = "visible";
     }, delay);
   }, []);
 

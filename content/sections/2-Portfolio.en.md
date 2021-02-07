@@ -16,7 +16,7 @@ portfolios: [
     imageFileName: "portfolio/owl.jpg",
     imageFileNameDetail: "portfolio/owl.jpg",
     header: "Viergast",
-    subheader: "Developer Portfolio",
+    subheader: "Portfolio",
     content: "A procedure generated developer portfolio that runs on top of a reactjs, material design and google cloud platform. Its eminently configurable and forms the basis of our propertary site-gen technology.",
     extraInfo: ["Date: January 2017", "Client: Swayam Siddha", "Category: Portfolio"],
      link: 'https://viergast.me'

@@ -50,7 +50,7 @@ const PortfolioItem = ({
         </a>
         <div className="portfolio-caption">
           <h4>{header}</h4>
-          {subheader ? <a href={link}><p className="">{subheader}</p></a> : null}
+          {subheader ? <a href={link} target='_blank' rel="noreferrer noopener "><p className="">{subheader}</p></a> : null}
         </div>
       </Col>
       <PortfolioDetailDialog
