@@ -126,34 +126,34 @@ const IndexPage = ({ data, pathContext: { langKey, /* defaultLang, langTextMap *
   //   );
   // }
 
-  const [isVisible, hideLoading] = useState(true);
+  // const [isVisible, hideLoading] = useState(true);
 
 
-  const [hasBody, setHasBody] = useState(false);
+  // const [hasBody, setHasBody] = useState(false);
 
-  useEffect(() => setHasBody(document.querySelector('body') != null));
+  // useEffect(() => setHasBody(document.querySelector('body') != null));
 
-  hasBody
-    ? document.body.style.overflow = "hidden"
-    : console.log('document not found')
+  // hasBody
+  //   ? document.body.style.overflow = "hidden"
+  //   : console.log('document not found')
 
 
-  const delay = 2000;
+  // const delay = 2000;
 
-  useEffect(() => {
-    setTimeout(() => {
-      hideLoading({ isVisible: false });
-      hasBody
-        ? document.body.style.overflow = "visible"
-        : console.log('document not found')
-    }, delay);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     hideLoading({ isVisible: false });
+  //     hasBody
+  //       ? document.body.style.overflow = "visible"
+  //       : console.log('document not found')
+  //   }, delay);
+  // }, []);
 
   return (
     <>
       <SEO lang={langKey} title="the ochre concept" keywords={keywords} description={description} />
       {/* <Loading {...isVisible} /> */}
-      <Fade when={true} delay={delay * 2}>
+      <Fade when={true} delay={500}>
         <Navbar
           anchors={anchors}
           frontmatter={navBarNode.frontmatter}
