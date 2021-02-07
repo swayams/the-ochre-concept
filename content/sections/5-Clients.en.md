@@ -2,11 +2,11 @@
 clients: [
   {
     imageFileName: "logos/geste.png",
-    href: "#!"
+    href: "https://geste-bakery.netlify.app/"
   },
   {
     imageFileName: "logos/rcsj.png",
-    href: "#!"
+    href: "https://rajdhanirubberindu.wixsite.com/rcsj"
   },
 
 ]
